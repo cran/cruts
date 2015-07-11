@@ -1,0 +1,10 @@
+0ea746b694ce1e3dca348faca76f0ff5 *DESCRIPTION
+57e28716f8f55f8f7233e2bb268bca4f *NAMESPACE
+89f73ef01488fa734c6ec3b26278c562 *R/cruts.R
+b32dd7ac144ee9586eee932340321905 *R/import-export.R
+bc30784b6b18338162fe60f95f012eed *README.md
+dd1e737fda5384e39fc54eb91bd896b6 *man/cruts-package.Rd
+bb34e2b8bfdf26de18d829a897d6aba6 *man/cruts2poly.Rd
+71f22b2367b49432c255a4679ce8db75 *man/cruts2raster.Rd
+17a3f6fb0dcf1f02ee1f8d74bd5c8792 *man/extractNetCDF.Rd
+c12a691227388e2e10bbbbed4ea51e67 *man/getAnomaly.Rd
