@@ -16,7 +16,7 @@
 
 cruts2raster <- function(ncfile,timeRange=NULL,poly=NULL,offset="1900-01-01",type="stack"){
 
-    nc <- open.ncdf(ncfile)
+    nc <- nc_open(ncfile)
     lon <- nc$dim$lon$vals
     lat <- nc$dim$lat$vals
     time <- nc$dim$time$vals
@@ -63,7 +63,7 @@ cruts2raster <- function(ncfile,timeRange=NULL,poly=NULL,offset="1900-01-01",typ
         setTxtProgressBar(pb,i) 
     }
     close(pb)
-    close.ncdf(nc)
+    nc_close(nc)
     names(rlist) <- as.character(times[tmin:tmax])
 
     if(type=="stack"){
@@ -149,7 +149,7 @@ extractNetCDF <- function(nc,start=NULL,count=NULL){
         count <- c(-1,-1,1)           
     }
     
-    x <- get.var.ncdf(nc=nc, varid=nc$var[[1]], start=start, count=count)
+    x <- ncvar_get(nc=nc, varid=nc$var[[1]], start=start, count=count)
 
     return(x)
 }
