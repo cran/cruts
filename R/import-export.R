@@ -21,6 +21,7 @@ cruts2raster <- function(ncfile,timeRange=NULL,poly=NULL,offset="1900-01-01",typ
     lat <- nc$dim$lat$vals
     time <- nc$dim$time$vals
     cstime <- time[1] + cumsum(diff(time))
+    cstime <- c(time[1], cstime) # Thanks to Bikash Parida for this bug fix
     d <- sapply(nc$dim,function(x){x$len}) # dimension
 
     starttime <- as.Date(offset)
@@ -52,7 +53,9 @@ cruts2raster <- function(ncfile,timeRange=NULL,poly=NULL,offset="1900-01-01",typ
     pb <- txtProgressBar(min=tmin,max=tmax,style=3)
     for(i in tmin:tmax){
 
-        lay <- extractNetCDF(nc,start=c(1,1,i))
+        ii <- i - tmin + 1
+
+        lay <- extractNetCDF(nc,start=c(1,1,ii))
         lay <- raster(t(lay[,N:1]), xmn=lon[1]-dx/2, xmx=lon[M]+dx/2, ymn=lat[1]-dy/2, ymx=lat[N]+dy/2, crs=CRS("+init=epsg:4326"))
         if(is.null(poly)){         
             rlist <- c(rlist,lay)
