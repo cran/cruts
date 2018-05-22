@@ -27,4 +27,3 @@ A function to extract anomalies from the Climatic Research Unit Time-Series data
 \details{
 Data can be obtained from \url{http://catalogue.ceda.ac.uk/uuid/ac4ecbd554d0dd52a9b575d9666dc42d}
 }
-

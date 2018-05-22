@@ -2,8 +2,8 @@
 % Please edit documentation in R/cruts.R
 \docType{package}
 \name{cruts-package}
-\alias{cruts}
 \alias{cruts-package}
+\alias{cruts}
 \title{cruts}
 \format{An object of class \code{logical} of length 1.}
 \usage{
@@ -13,12 +13,8 @@ cruts
 Read data from CRU TS3.21: Climatic Research Unit (CRU) Time-Series (TS) Version 3.21 of High Resolution Gridded Data of Month-by-month \url{http://catalogue.ceda.ac.uk/uuid/ac4ecbd554d0dd52a9b575d9666dc42d}
 }
 \details{
-\tabular{ll}{
-Package: \tab cruts\cr
-Version: \tab 0.1\cr
-Date: \tab 2015-07-03\cr
-License: \tab GPL-3 \cr
-}
+\packageDESCRIPTION{cruts}
+\packageIndices{cruts}
 
 
 
@@ -39,4 +35,3 @@ X
 Benjamin Taylor, Department of Medicine, Lancaster University
 }
 \keyword{package}
-

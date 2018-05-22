@@ -24,4 +24,3 @@ A function to extract data from CRU TS NetCDF files. A wrapper function for get.
 \dontrun{extractNetCDF(dat=dat,start=c(1,1,1,1),count=c(1,2,3,1))}
 \dontrun{extractNetCDF(dat=dat,start=c(1,1,1,1),count=c(-1,1,1,1))}
 }
-

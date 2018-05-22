@@ -30,4 +30,3 @@ Data can be obtained from \url{http://catalogue.ceda.ac.uk/uuid/ac4ecbd554d0dd52
 \examples{
 \dontrun{crutsimport(ncfile="my_cruts_file.nc",timeRange=c("2000-01-01","2001-01-01"))}
 }
-
