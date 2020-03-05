@@ -4,8 +4,13 @@
 \alias{cruts2poly}
 \title{cruts2poly function}
 \usage{
-cruts2poly(ncfile, poly, timeRange = NULL, offset = "1900-01-01",
-  na.rm = FALSE)
+cruts2poly(
+  ncfile,
+  poly,
+  timeRange = NULL,
+  offset = "1900-01-01",
+  na.rm = FALSE
+)
 }
 \arguments{
 \item{ncfile}{character string giving name and location of the CRUTS time series NetCDF file (if the file you downloaded is zipped, then you will need to extract it)}

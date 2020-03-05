@@ -4,8 +4,13 @@
 \alias{cruts2raster}
 \title{cruts2raster function}
 \usage{
-cruts2raster(ncfile, timeRange = NULL, poly = NULL, offset = "1900-01-01",
-  type = "stack")
+cruts2raster(
+  ncfile,
+  timeRange = NULL,
+  poly = NULL,
+  offset = "1900-01-01",
+  type = "stack"
+)
 }
 \arguments{
 \item{ncfile}{character string giving name and location of the CRUTS time series NetCDF file (if the file you downloaded is zipped, then you will need to extract it)}

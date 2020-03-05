@@ -4,8 +4,13 @@
 \alias{getAnomaly}
 \title{getAnomaly function}
 \usage{
-getAnomaly(ncfile, poly = NULL, timeRange = NULL, offset = "1900-01-01",
-  na.rm = FALSE)
+getAnomaly(
+  ncfile,
+  poly = NULL,
+  timeRange = NULL,
+  offset = "1900-01-01",
+  na.rm = FALSE
+)
 }
 \arguments{
 \item{ncfile}{character string giving name and location of the CRUTS time series NetCDF file (if the file you downloaded is zipped, then you will need to extract it)}
